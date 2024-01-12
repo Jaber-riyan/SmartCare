@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: antiquewhite">
+
+
+    <div style="padding: 20px;">
+      <h3>Hello {{user.first_name}} {{user.last_name}} ☺</h3>
+      <p>
+        Hope you are doing well. You requested for an online appointment with 
+        <b>Dr.{{doctor.user.first_name}} {{doctor.user.last_name}}</b>
+      </p>
+      <p>
+        Your doctor is available to meet you. Join the below meet link as soon
+        as possible
+      </p>
+      <p>
+        Meet Link : <a href="{{doctor.meet_link}}" target="_blank"><b>{{doctor.meet_link}}</b></a>
+      </p>
+      <p><b>Thanks</b></p>
+      <p><b>SmartCare</b></p>
+    </div>
+
+
