@@ -29,6 +29,8 @@ SECRET_KEY = 'django-insecure-k-#dz0d_e$_ebv4h*#%@21#t36jfredx#+y%4+o1r_5+anydyh
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://smart-care-si0s.onrender.com','https://*.127.0.0.1']
+
 
 
 # Application definition
@@ -93,6 +95,7 @@ DATABASES = {
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS' : ['django_filters.rest_framework.DjangoFilterBackend'],
 }
+
 
 
 # Password validation
